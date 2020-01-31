@@ -1,0 +1,37 @@
+{
+	"ReRoutes": [
+		{
+			"ServiceName": "sf_prototype/aadb2cmicroservice",
+			"UseServiceDiscovery": true,
+			"UpstreamPathTemplate": "/aadb2cmicroservice/{route}",
+			"UpstreamHttpMethod": [
+				"GET"
+			],
+			"DownstreamScheme": "http",
+			"DownstreamPathTemplate": "/{route}",
+			"AuthenticationOptions": {
+				"AuthenticationProviderKey": "TemisApiGatewayKey",
+				"AllowedScopes": []
+			},
+			"AddHeadersToRequest": {
+				"UserId": "Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value > |",
+				"UserName": "Claims[name] > value > |",
+				"Email": "Claims[emails] > value > |"
+			},
+			"QoSOptions": {
+				"ExceptionsAllowedBeforeBreaking": 3,
+				"DurationOfBreak": 5,
+				"TimeoutValue": 1200000
+			}
+		}
+	],
+	"GlobalConfiguration": {
+		"RequestIdKey": "OcRequestId",
+		"AdministrationPath": "/administration",
+		"ServiceDiscoveryProvider": {
+			"Host": "localhost",
+			"Port": 19081,
+			"Type": "ServiceFabric"
+		}
+	}
+}

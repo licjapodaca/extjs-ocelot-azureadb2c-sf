@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "sf_prototype", "sf-prototype\sf_prototype.sfproj", "{17A242B7-7745-4F04-9AE2-1DAD93000D9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aadb2capigateway", "aadb2capigateway\aadb2capigateway.csproj", "{4D010D1D-FD1C-41DD-B726-D8335CC79B09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aadb2cmicroservice", "aadb2cmicroservice\aadb2cmicroservice.csproj", "{2B9ED334-5041-438F-84D4-7343D96F01F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Service Fabric App", "01 - Service Fabric App", "{DDBAADF4-3599-4B0D-99D4-27ED5872207C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - ApiGateway", "02 - ApiGateway", "{97B1C616-0266-47CE-9A4F-2A1D552D1651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Microservice", "03 - Microservice", "{8BF98278-8DF6-42AC-8C28-D81BB8B7A51E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Debug|x64.ActiveCfg = Debug|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Debug|x64.Build.0 = Debug|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Debug|x64.Deploy.0 = Debug|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Release|Any CPU.ActiveCfg = Release|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Release|x64.ActiveCfg = Release|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Release|x64.Build.0 = Release|x64
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C}.Release|x64.Deploy.0 = Release|x64
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Debug|x64.Build.0 = Debug|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Release|x64.ActiveCfg = Release|Any CPU
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09}.Release|x64.Build.0 = Release|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B9ED334-5041-438F-84D4-7343D96F01F1}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17A242B7-7745-4F04-9AE2-1DAD93000D9C} = {DDBAADF4-3599-4B0D-99D4-27ED5872207C}
+		{4D010D1D-FD1C-41DD-B726-D8335CC79B09} = {97B1C616-0266-47CE-9A4F-2A1D552D1651}
+		{2B9ED334-5041-438F-84D4-7343D96F01F1} = {8BF98278-8DF6-42AC-8C28-D81BB8B7A51E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E063A8E-0398-4996-885D-B0E05FDD3611}
+	EndGlobalSection
+EndGlobal
